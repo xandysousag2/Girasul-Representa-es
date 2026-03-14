@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Girasul Representações | Soluções Industriais no Paraná</title>
-  <meta name="description" content="A Girasul representa fabricantes líderes em soluções industriais: estruturas eletromecânicas, PRFV, iluminação, ventilação natural, polipropileno e engenharia & inspeção. Atendimento consultivo no Paraná e região Sul.">
+  <meta name="description" content="A Girasul representa fabricantes líderes em soluções industriais: estruturas eletromecânicas, PRFV, iluminação, ventilação natural, polipropileno e engenharia & inspeção. Atendimento consultivo no Paraná e região Sul." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://site-girasul.vercel.app/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,10 @@
         <a href="#como-atuamos">Como Atuamos</a>
         <a href="#sobre">Sobre</a>
         <a href="#segmentos">Segmentos</a>
-        <a href="#contato" class="btn btn-nav">Falar com especialista</a>
+        <a href="https://wa.me/5541999214921?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20falar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
+           class="btn btn-nav"
+           target="_blank"
+           rel="noopener">Falar com especialista</a>
       </nav>
       <button class="nav-toggle" aria-label="Abrir menu">
         <span></span>
@@ -36,7 +39,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="topo">
 
     <!-- HERO - Linha de Produção -->
     <section class="hero">
@@ -137,9 +140,11 @@
 
           <div class="about-bullets">
             <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i data-feather="award"></i></div>
+              <div class="about-bullet-icon">
+                <i data-feather="check-circle"></i>
+              </div>
               <div>
-                <h3 class="about-bullet-title">Experiência Comprovada</h3>
+                <p class="about-bullet-title">Experiência Comprovada</p>
                 <p class="about-bullet-text">
                   Mais de 30 anos de atuação no mercado, com profundo conhecimento
                   técnico e histórico de sucesso em projetos complexos.
@@ -148,9 +153,11 @@
             </div>
 
             <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i data-feather="check-circle"></i></div>
+              <div class="about-bullet-icon">
+                <i data-feather="award"></i>
+              </div>
               <div>
-                <h3 class="about-bullet-title">Portfólio Selecionado</h3>
+                <p class="about-bullet-title">Portfólio Selecionado</p>
                 <p class="about-bullet-text">
                   Representamos apenas fabricantes líderes, garantindo acesso às
                   melhores tecnologias e produtos do mercado.
@@ -159,9 +166,11 @@
             </div>
 
             <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i data-feather="users"></i></div>
+              <div class="about-bullet-icon">
+                <i data-feather="tool"></i>
+              </div>
               <div>
-                <h3 class="about-bullet-title">Atendimento Consultivo</h3>
+                <p class="about-bullet-title">Atendimento Consultivo</p>
                 <p class="about-bullet-text">
                   Do diagnóstico à indicação técnica, oferecemos suporte completo
                   para otimizar a eficiência e segurança da sua operação.
@@ -170,9 +179,11 @@
             </div>
 
             <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i data-feather="handshake"></i></div>
+              <div class="about-bullet-icon">
+                <i data-feather="users"></i>
+              </div>
               <div>
-                <h3 class="about-bullet-title">Parceria Estratégica</h3>
+                <p class="about-bullet-title">Parceria Estratégica</p>
                 <p class="about-bullet-text">
                   Vamos além da venda, buscando construir relações de longo prazo
                   com clientes e representadas, focadas em resultados.
@@ -188,74 +199,105 @@
     <section class="how-we-work" id="como-atuamos">
       <div class="container">
         <div class="section-header text-center">
-          <p class="badge">Nosso Processo</p>
-          <h2>Como atuamos: da necessidade à solução entregue.</h2>
+          <p class="badge">Como atuamos</p>
+          <h2>Uma linha de atuação pensada para a sua planta</h2>
           <p class="section-lead">
-            Nossa metodologia de trabalho garante que cada etapa do seu projeto seja
-            acompanhada de perto, com foco em eficiência e resultados.
+            Do diagnóstico à implementação, seguimos um fluxo claro para garantir
+            a escolha e a aplicação correta das soluções industriais.
           </p>
         </div>
-        <div class="steps-grid">
-          <div class="step-item">
-            <div class="step-icon"><i data-feather="search"></i></div>
-            <h3 class="step-title">1. Diagnóstico</h3>
-            <p class="step-text">Entendemos a fundo sua necessidade, contexto da planta e objetivos do projeto.</p>
+
+        <div class="flow-layout">
+          <div class="flow-cards">
+            <div class="step-item">
+              <div class="step-icon">
+                <i data-feather="search"></i>
+              </div>
+              <h3 class="step-title">1. Diagnóstico e Análise</h3>
+              <p class="step-text">
+                Entendemos as necessidades específicas da sua operação,
+                desafios e objetivos para propor a solução ideal.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <i data-feather="git-pull-request"></i>
+              </div>
+              <h3 class="step-title">2. Especificação Técnica</h3>
+              <p class="step-text">
+                Com base no diagnóstico, indicamos os produtos e sistemas
+                dos fabricantes mais adequados, com detalhamento técnico.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <i data-feather="truck"></i>
+              </div>
+              <h3 class="step-title">3. Suporte e Logística</h3>
+              <p class="step-text">
+                Acompanhamos todo o processo, da negociação à entrega,
+                garantindo que tudo ocorra conforme o planejado.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-icon">
+                <i data-feather="check-square"></i>
+              </div>
+              <h3 class="step-title">4. Pós-Venda e Acompanhamento</h3>
+              <p class="step-text">
+                Nosso compromisso continua após a entrega, com suporte
+                e acompanhamento para a sua satisfação e desempenho.
+              </p>
+            </div>
           </div>
-          <div class="step-item">
-            <div class="step-icon"><i data-feather="git-pull-request"></i></div>
-            <h3 class="step-title">2. Proposição</h3>
-            <p class="step-text">Indicamos as soluções e fabricantes mais adequados, com base em critérios técnicos.</p>
-          </div>
-          <div class="step-item">
-            <div class="step-icon"><i data-feather="tool"></i></div>
-            <h3 class="step-title">3. Implementação</h3>
-            <p class="step-text">Acompanhamos a execução, garantindo a correta aplicação e conformidade.</p>
-          </div>
-          <div class="step-item">
-            <div class="step-icon"><i data-feather="award"></i></div>
-            <h3 class="step-title">4. Suporte</h3>
-            <p class="step-text">Oferecemos pós-venda e suporte técnico para a longevidade da solução.</p>
+
+          <div class="flow-image">
+            <img src="assets/img/ilustracoes/img-tecnico-laptop.webp"
+                 alt="Técnico com laptop em ambiente industrial"
+                 loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CARDS DETALHADOS DAS SOLUÇÕES - Módulos de Planta -->
+    <!-- SOLUÇÕES QUE REPRESENTAMOS -->
     <section class="section" id="solucoes">
       <div class="container">
         <div class="section-header text-center">
-          <p class="badge">Soluções em detalhes</p>
-          <h2>Linhas que representamos na prática</h2>
+          <p class="badge">Portfólio</p>
+          <h2>Soluções que representamos</h2>
           <p class="section-lead">
-            Entenda melhor as frentes em que atuamos e os tipos de aplicação
-            em que as soluções dos fabricantes representados pela Girasul se destacam.
+            Cada linha foi escolhida por critério técnico e histórico de qualidade
+            comprovado no mercado industrial.
           </p>
         </div>
 
         <div class="cards-grid">
-
           <!-- Card 1: Eletromecânicos -->
           <article class="card" id="eletromecanicos">
             <img src="assets/img/ilustracoes/categoria-eletromecanicos.webp"
-                 alt="Estruturas eletromecânicas em ambiente industrial"
+                 alt="Estruturas eletromecânicas em galpão industrial"
                  class="card-image"
                  loading="lazy">
             <div class="card-body">
-              <h3>Eletromecânicos</h3>
+              <h3>Estruturas Eletromecânicas</h3>
               <p>
-                Estruturas e sistemas eletromecânicos para instalações industriais,
-                com foco em robustez, organização e segurança das linhas.
+                Sistemas de eletrocalhas, leitos, perfilados e acessórios para
+                instalações elétricas e de dados em ambientes industriais.
               </p>
               <ul class="card-list">
-                <li>Bandejas e eletrocalhas</li>
-                <li>Postes, suportes e estruturas metálicas</li>
-                <li>Soluções para passagem e organização de cabos</li>
-                <li>Componentes para fixação e ancoragem</li>
+                <li>Eletrocalhas e leitos</li>
+                <li>Perfilados e acessórios</li>
+                <li>Sistemas de fixação</li>
+                <li>Suportes e componentes</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
-                  <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto">
+                  <img src="assets/img/logos/logo-enmac.webp" alt="Enmac" />
                 </div>
               </div>
             </div>
@@ -263,51 +305,50 @@
 
           <!-- Card 2: PRFV -->
           <article class="card" id="prfv">
-            <img src="assets/img/ilustracoes/categoria-prfv-estruturas.webp"
-                 alt="Estruturas industriais em PRFV"
+            <img src="assets/img/ilustracoes/categoria-prfv.webp"
+                 alt="Estruturas em PRFV (Plástico Reforçado com Fibra de Vidro)"
                  class="card-image"
                  loading="lazy">
             <div class="card-body">
               <h3>Estruturas em PRFV</h3>
               <p>
-                Perfis, grades, escadas e passarelas em Plástico Reforçado com Fibra
-                de Vidro para ambientes agressivos, com alta resistência à corrosão.
+                Perfis, grades, escadas e passarelas em Plástico Reforçado com
+                Fibra de Vidro, ideais para ambientes corrosivos e agressivos.
               </p>
               <ul class="card-list">
-                <li>Perfis pultrudados e grades moldadas</li>
-                <li>Escadas, passarelas e plataformas</li>
-                <li>Corrimãos e guarda-corpos</li>
-                <li>Estruturas para ambientes corrosivos</li>
+                <li>Perfis e grades</li>
+                <li>Escadas e passarelas</li>
+                <li>Plataformas e guarda-corpos</li>
+                <li>Soluções para ambientes corrosivos</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
-                  <img src="assets/img/logos/logo-enmac.webp" alt="Enmac">
+                  <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto" />
                 </div>
               </div>
             </div>
           </article>
 
           <!-- Card 3: Engenharia e Inspeção -->
-          <article class="card" id="engenharia">
+          <article class="card" id="engenharia-inspecao">
             <img src="assets/img/ilustracoes/categoria-engenharia-inspecao.webp"
-                 alt="Técnico realizando inspeção de equipamento industrial"
+                 alt="Engenheiro inspecionando máquinas industriais"
                  class="card-image"
                  loading="lazy">
             <div class="card-body">
-              <h3>Engenharia e Inspeção Industrial</h3>
+              <h3>Engenharia e Inspeção</h3>
               <p>
                 Serviços técnicos especializados em segurança de máquinas e
-                equipamentos, com emissão de laudos e projetos de adequação.
+                equipamentos industriais, adequação à NR12 e projetos de segurança.
               </p>
               <ul class="card-list">
-                <li>Inspeção de pontes rolantes, talhas e guindastes</li>
-                <li>Laudo e reconstituição de memoriais descritivos</li>
+                <li>Adequação à NR12</li>
                 <li>Inventário de máquinas e adequação NR12</li>
                 <li>Sistemas antiqueda e projetos de segurança</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
                   <img src="assets/img/logos/logo-triade.webp" alt="Tríade" />
                 </div>
@@ -334,7 +375,7 @@
                 <li>Claraboias e sheds</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
                   <img src="assets/img/logos/logo-hadley.webp" alt="Hadley" />
                 </div>
@@ -361,7 +402,7 @@
                 <li>Alta vida útil e baixa manutenção</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
                   <img src="assets/img/logos/logo-ledstar.webp" alt="Ledstar" />
                 </div>
@@ -388,7 +429,7 @@
                 <li>Sistemas de filtragem e projetos especiais</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
                   <img src="assets/img/logos/logo-dakota.webp" alt="Dakota" />
                 </div>
@@ -415,7 +456,7 @@
                 <li>Projetos especiais sob demanda</li>
               </ul>
               <div class="card-brands">
-                <span>Representadas</span>
+                <span>Fabricantes</span>
                 <div class="card-brands-logos">
                   <img src="assets/img/logos/logo-vetro.webp" alt="Vetro" />
                 </div>
