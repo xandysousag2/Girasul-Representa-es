@@ -4,189 +4,464 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Girasul Representações | Soluções Industriais no Paraná</title>
-  <meta name="description" content="A Girasul representa fabricantes líderes em soluções industriais: estruturas eletromecânicas, PRFV, medição, iluminação, ventilação natural, polipropileno e engenharia & inspeção. Atendimento consultivo no Paraná e região Sul.">
+  <meta name="description" content="A Girasul representa fabricantes líderes em soluções industriais: estruturas eletromecânicas, PRFV, iluminação, ventilação natural, polipropileno e engenharia & inspeção. Atendimento consultivo no Paraná e região Sul.">
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://site-girasul.vercel.app/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Ícones para os bullets e steps -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/img/logos/logo-girasul.webp"
-             alt="Girasul Representações"
-             class="brand-logo" />
+      <a href="/" class="brand-logo-link">
+        <img src="assets/img/logos/logo-girasul.webp" alt="Girasul Representações" class="brand-logo" />
       </a>
-      <nav class="main-nav" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="solucoes-industriais.html">Soluções industriais</a>
-        <a href="#sobre">Sobre a Girasul</a>
+      <nav class="main-nav">
+        <a href="#solucoes">Soluções</a>
+        <a href="#como-atuamos">Como Atuamos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#segmentos">Segmentos</a>
         <a href="#contato" class="btn btn-nav">Falar com especialista</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
   <main>
 
-    <!-- HERO -->
+    <!-- HERO - Linha de Produção -->
     <section class="hero">
-      <div class="container hero-grid">
+      <img src="assets/img/ilustracoes/hero-girasul-industrial.webp"
+           alt="Linha de produção industrial em operação"
+           class="hero-background-image"
+           loading="eager" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
         <div class="hero-text">
-          <p class="badge">Representações Técnicas · Indústria</p>
-          <h1>Conectamos sua indústria às melhores soluções do mercado.</h1>
+          <p class="badge">Soluções Industriais</p>
+          <h1>Conectamos sua empresa às melhores soluções do mercado.</h1>
           <p class="lead">
-            A Girasul representa fabricantes de referência em soluções industriais:
-            eletromecânicos, PRFV, medição, iluminação e ventilação natural,
-            polipropileno e engenharia & inspeção.
+            Representamos fabricantes de referência em soluções industriais: eletromecânicos, PRFV, iluminação e ventilação natural, polipropileno e engenharia & inspeção.
           </p>
-          <ul class="hero-highlights">
-            <li>Representação técnica de fabricantes nacionais líderes</li>
-            <li>Atendimento consultivo — do projeto à entrega</li>
-            <li>Atuação no Paraná e região Sul</li>
-          </ul>
           <div class="hero-ctas">
-            <a href="solucoes-industriais.html" class="btn btn-primary">Ver soluções industriais</a>
-            <a href="#contato" class="btn btn-outline">Falar com especialista</a>
+            <a href="https://wa.me/5541999214921?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20falar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener">
+              Falar com especialista
+            </a>
+            <a href="#solucoes" class="btn btn-outline">Ver soluções</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="assets/img/ilustracoes/hero-industrial-home.webp"
-               alt="Ambiente industrial com estruturas e equipamentos de alta performance"
-               class="hero-image" />
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value">+30</span>
+            <span class="metric-label">Anos de atuação</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">7</span>
+            <span class="metric-label">Linhas de solução</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">Brasil</span>
+            <span class="metric-label">Atuação nacional</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CATEGORIAS -->
+    <!-- FABRICANTES (Portfólio) -->
     <section class="section section-soft">
       <div class="container">
         <div class="section-header text-center">
           <p class="badge">Portfólio</p>
-          <h2>Soluções que representamos</h2>
+          <h2>Fabricantes que representamos</h2>
           <p class="section-lead">
-            Cada linha foi escolhida por critério técnico e histórico de qualidade
-            comprovado no mercado industrial.
+            Trabalhamos com marcas selecionadas por critério técnico e histórico
+            comprovado de qualidade no mercado industrial.
           </p>
         </div>
-        <div class="home-categories">
-          <a href="solucoes-industriais.html#eletromecânicos" class="home-cat">
-            <h3>Eletromecânicos</h3>
-            <p>Estruturas, bandejas, eletrocalhas e sistemas de fixação para instalações industriais.</p>
-          </a>
-          <a href="solucoes-industriais.html#prfv" class="home-cat">
-            <h3>PRFV</h3>
-            <p>Tubulações, tanques e estruturas em fibra de vidro para ambientes agressivos.</p>
-          </a>
-          <a href="solucoes-industriais.html#medicao" class="home-cat">
-            <h3>Medição</h3>
-            <p>Instrumentos e sistemas de medição para controle de processos industriais.</p>
-          </a>
-          <a href="solucoes-industriais.html#iluminacao" class="home-cat">
-            <h3>Iluminação e Ventilação Natural</h3>
-            <p>Soluções passivas de iluminação e ventilação para galpões e plantas industriais.</p>
-          </a>
-          <a href="solucoes-industriais.html#polipropileno" class="home-cat">
-            <h3>Polipropileno</h3>
-            <p>Tubulações e conexões termoplásticas para processos químicos e industriais.</p>
-          </a>
-          <a href="solucoes-industriais.html#engenharia" class="home-cat">
-            <h3>Engenharia & Inspeção</h3>
-            <p>Serviços técnicos especializados de engenharia e inspeção de equipamentos.</p>
-          </a>
+        <div class="fab-grid">
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-dakota.webp" alt="Dakota Engenharia" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-enmac.webp" alt="Enmac" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-hadley.webp" alt="Hadley" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-ledstar.webp" alt="Ledstar" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-triade.webp" alt="Tríade" />
+          </div>
+          <div class="fab-card">
+            <img src="assets/img/logos/logo-vetro.webp" alt="Vetro" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
+    <!-- SOBRE A GIRASUL -->
     <section class="section" id="sobre">
       <div class="container about-grid">
-        <div class="about-text">
-          <div class="section-header">
-            <p class="badge">Sobre a Girasul</p>
-            <h2>Uma representação técnica, não só comercial.</h2>
-          </div>
-          <p>
-            A Girasul Representações atua conectando indústrias, construtoras e empresas
-            de infraestrutura a fabricantes de soluções industriais de alta performance.
-          </p>
-          <p style="margin-top: 16px;">
-            Com atuação consultiva, apoiamos desde a definição da solução até o
-            acompanhamento junto ao fabricante, garantindo aderência técnica,
-            confiabilidade e eficiência.
-          </p>
+        <div class="about-visual">
+          <img src="assets/img/ilustracoes/sobre-girasul-planta-externa.webp"
+               alt="Ambiente industrial moderno representando a atuação da Girasul"
+               loading="lazy">
         </div>
-        <aside class="about-box">
-          <h3>Marcas representadas</h3>
-          <p>Fabricantes com forte presença nacional e soluções reconhecidas pelo mercado.</p>
-          <div class="logos-grid">
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-beam.webp" alt="Beam" />
+
+        <div class="about-text">
+          <p class="badge">Sobre a Girasul</p>
+          <h2>Experiência e confiança em soluções industriais.</h2>
+          <p>
+            Desde 1991, a Girasul Representações atua conectando empresas,
+            construtoras e operações de infraestrutura a fabricantes de soluções
+            de alta performance. Nossa trajetória é marcada pela busca contínua
+            por excelência e parcerias duradouras.
+          </p>
+
+          <div class="about-bullets">
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i data-feather="award"></i></div>
+              <div>
+                <h3 class="about-bullet-title">Experiência Comprovada</h3>
+                <p class="about-bullet-text">
+                  Mais de 30 anos de atuação no mercado, com profundo conhecimento
+                  técnico e histórico de sucesso em projetos complexos.
+                </p>
+              </div>
             </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-dakota.webp" alt="Dakota" />
+
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i data-feather="check-circle"></i></div>
+              <div>
+                <h3 class="about-bullet-title">Portfólio Selecionado</h3>
+                <p class="about-bullet-text">
+                  Representamos apenas fabricantes líderes, garantindo acesso às
+                  melhores tecnologias e produtos do mercado.
+                </p>
+              </div>
             </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-enmac.webp" alt="Enmac" />
+
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i data-feather="users"></i></div>
+              <div>
+                <h3 class="about-bullet-title">Atendimento Consultivo</h3>
+                <p class="about-bullet-text">
+                  Do diagnóstico à indicação técnica, oferecemos suporte completo
+                  para otimizar a eficiência e segurança da sua operação.
+                </p>
+              </div>
             </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-hadley.webp" alt="Hadley" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-lao.webp" alt="Lao" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-ledstar.webp" alt="Ledstar" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-strahal.png" alt="Strahal" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-triade.webp" alt="Tríade" />
-            </div>
-            <div class="logo-item">
-              <img src="assets/img/logos/logo-vetro.webp" alt="Vetro" />
+
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i data-feather="handshake"></i></div>
+              <div>
+                <h3 class="about-bullet-title">Parceria Estratégica</h3>
+                <p class="about-bullet-text">
+                  Vamos além da venda, buscando construir relações de longo prazo
+                  com clientes e representadas, focadas em resultados.
+                </p>
+              </div>
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <!-- POR QUE GIRASUL -->
-    <section class="section section-soft">
+    <!-- COMO ATUAMOS (Nova Seção - Linha de Produção) -->
+    <section class="how-we-work" id="como-atuamos">
       <div class="container">
         <div class="section-header text-center">
-          <p class="badge">Diferenciais</p>
-          <h2>Por que escolher a Girasul</h2>
+          <p class="badge">Nosso Processo</p>
+          <h2>Como atuamos: da necessidade à solução entregue.</h2>
           <p class="section-lead">
-            Mais do que uma representação comercial — somos um parceiro técnico de confiança.
+            Nossa metodologia de trabalho garante que cada etapa do seu projeto seja
+            acompanhada de perto, com foco em eficiência e resultados.
           </p>
         </div>
-        <div class="why-grid">
-          <div class="why-item">
-            <h3>Portfólio curado</h3>
-            <p>Representamos apenas fabricantes com histórico comprovado de qualidade e suporte técnico consistente.</p>
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-icon"><i data-feather="search"></i></div>
+            <h3 class="step-title">1. Diagnóstico</h3>
+            <p class="step-text">Entendemos a fundo sua necessidade, contexto da planta e objetivos do projeto.</p>
           </div>
-          <div class="why-item">
-            <h3>Atendimento consultivo</h3>
-            <p>Entendemos sua necessidade antes de indicar qualquer produto — o foco é sempre a solução certa para o seu caso.</p>
+          <div class="step-item">
+            <div class="step-icon"><i data-feather="git-pull-request"></i></div>
+            <h3 class="step-title">2. Proposição</h3>
+            <p class="step-text">Indicamos as soluções e fabricantes mais adequados, com base em critérios técnicos.</p>
           </div>
-          <div class="why-item">
-            <h3>Agilidade e proximidade</h3>
-            <p>Atuação direta no Paraná e região Sul, com resposta rápida e acompanhamento de perto em cada etapa.</p>
+          <div class="step-item">
+            <div class="step-icon"><i data-feather="tool"></i></div>
+            <h3 class="step-title">3. Implementação</h3>
+            <p class="step-text">Acompanhamos a execução, garantindo a correta aplicação e conformidade.</p>
           </div>
-          <div class="why-item">
-            <h3>Expertise multissetorial</h3>
-            <p>Atendemos desde indústrias de alimentos e química até saneamento, logística e edificações comerciais.</p>
+          <div class="step-item">
+            <div class="step-icon"><i data-feather="award"></i></div>
+            <h3 class="step-title">4. Suporte</h3>
+            <p class="step-text">Oferecemos pós-venda e suporte técnico para a longevidade da solução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS DETALHADOS DAS SOLUÇÕES - Módulos de Planta -->
+    <section class="section" id="solucoes">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="badge">Soluções em detalhes</p>
+          <h2>Linhas que representamos na prática</h2>
+          <p class="section-lead">
+            Entenda melhor as frentes em que atuamos e os tipos de aplicação
+            em que as soluções dos fabricantes representados pela Girasul se destacam.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- Card 1: Eletromecânicos -->
+          <article class="card" id="eletromecanicos">
+            <img src="assets/img/ilustracoes/categoria-eletromecanicos.webp"
+                 alt="Estruturas eletromecânicas em ambiente industrial"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Eletromecânicos</h3>
+              <p>
+                Estruturas e sistemas eletromecânicos para instalações industriais,
+                com foco em robustez, organização e segurança das linhas.
+              </p>
+              <ul class="card-list">
+                <li>Bandejas e eletrocalhas</li>
+                <li>Postes, suportes e estruturas metálicas</li>
+                <li>Soluções para passagem e organização de cabos</li>
+                <li>Componentes para fixação e ancoragem</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto">
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: PRFV -->
+          <article class="card" id="prfv">
+            <img src="assets/img/ilustracoes/categoria-prfv-estruturas.webp"
+                 alt="Estruturas industriais em PRFV"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Estruturas em PRFV</h3>
+              <p>
+                Perfis, grades, escadas e passarelas em Plástico Reforçado com Fibra
+                de Vidro para ambientes agressivos, com alta resistência à corrosão.
+              </p>
+              <ul class="card-list">
+                <li>Perfis pultrudados e grades moldadas</li>
+                <li>Escadas, passarelas e plataformas</li>
+                <li>Corrimãos e guarda-corpos</li>
+                <li>Estruturas para ambientes corrosivos</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-enmac.webp" alt="Enmac">
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Engenharia e Inspeção -->
+          <article class="card" id="engenharia">
+            <img src="assets/img/ilustracoes/categoria-engenharia-inspecao.webp"
+                 alt="Técnico realizando inspeção de equipamento industrial"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Engenharia e Inspeção Industrial</h3>
+              <p>
+                Serviços técnicos especializados em segurança de máquinas e
+                equipamentos, com emissão de laudos e projetos de adequação.
+              </p>
+              <ul class="card-list">
+                <li>Inspeção de pontes rolantes, talhas e guindastes</li>
+                <li>Laudo e reconstituição de memoriais descritivos</li>
+                <li>Inventário de máquinas e adequação NR12</li>
+                <li>Sistemas antiqueda e projetos de segurança</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-triade.webp" alt="Tríade" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Iluminação e Ventilação Natural -->
+          <article class="card" id="iluminacao-ventilacao">
+            <img src="assets/img/ilustracoes/categoria-iluminacao-ventilacao.webp"
+                 alt="Galpão industrial com domos de ventilação e iluminação natural"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Iluminação e Ventilação Natural</h3>
+              <p>
+                Sistemas passivos de iluminação e ventilação para galpões industriais,
+                logísticos e comerciais, com foco em conforto térmico e redução de consumo.
+              </p>
+              <ul class="card-list">
+                <li>Lanternins industriais</li>
+                <li>Domos e abóbadas translúcidas</li>
+                <li>Exaustores e insufladores</li>
+                <li>Claraboias e sheds</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-hadley.webp" alt="Hadley" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Iluminação LED -->
+          <article class="card" id="iluminacao-led">
+            <img src="assets/img/ilustracoes/categoria-iluminacao-led.webp"
+                 alt="Luminárias LED industriais em galpão"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Iluminação LED</h3>
+              <p>
+                Luminárias industriais de alta eficiência energética para ambientes
+                produtivos, logísticos e comerciais de grande porte.
+              </p>
+              <ul class="card-list">
+                <li>Luminárias para galpões e armazéns</li>
+                <li>Iluminação para linhas de produção</li>
+                <li>Soluções para ambientes externos e vias</li>
+                <li>Alta vida útil e baixa manutenção</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-ledstar.webp" alt="Ledstar" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Polipropileno -->
+          <article class="card" id="polipropileno">
+            <img src="assets/img/ilustracoes/categoria-polipropileno.webp"
+                 alt="Tanques e equipamentos industriais em polipropileno"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Produtos em Polipropileno</h3>
+              <p>
+                Equipamentos e sistemas em polipropileno (PP) para processos industriais
+                que exigem resistência química, impacto e variação de temperatura.
+              </p>
+              <ul class="card-list">
+                <li>Tanques e máquinas em PP</li>
+                <li>Sistemas de exaustão industrial</li>
+                <li>Contenções e lavadoras</li>
+                <li>Sistemas de filtragem e projetos especiais</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-dakota.webp" alt="Dakota" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Vetro -->
+          <article class="card" id="vetro">
+            <img src="assets/img/ilustracoes/categoria-vetro.webp"
+                 alt="Tubulações e sistemas em PP e PRFV para saneamento e infraestrutura"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-body">
+              <h3>Tubulações e Sistemas — Vetro</h3>
+              <p>
+                Soluções em polipropileno e PRFV para saneamento, infraestrutura hídrica
+                e projetos industriais que exigem durabilidade e alta resistência.
+              </p>
+              <ul class="card-list">
+                <li>Tubos e conexões em PP e PRFV</li>
+                <li>Sistemas para abastecimento e esgotamento</li>
+                <li>Infraestrutura hídrica e saneamento</li>
+                <li>Projetos especiais sob demanda</li>
+              </ul>
+              <div class="card-brands">
+                <span>Representadas</span>
+                <div class="card-brands-logos">
+                  <img src="assets/img/logos/logo-vetro.webp" alt="Vetro" />
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGMENTOS -->
+    <section class="section section-soft" id="segmentos">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="badge">Segmentos</p>
+          <h2>Segmentos atendidos</h2>
+          <p class="section-lead">
+            Nossas soluções estão presentes em diferentes tipos de indústrias e
+            instalações, sempre adaptadas à realidade de cada operação.
+          </p>
+        </div>
+        <div class="seg-grid">
+          <div class="seg-card">
+            <h3>Indústria</h3>
+            <p>Alimentos, química, metalurgia e manufatura em geral — ambientes que exigem robustez técnica e conformidade com normas.</p>
+          </div>
+          <div class="seg-card">
+            <h3>Saneamento e infraestrutura</h3>
+            <p>Projetos de abastecimento, esgotamento sanitário e infraestrutura urbana com exigências de durabilidade e precisão.</p>
+          </div>
+          <div class="seg-card">
+            <h3>Logística e distribuição</h3>
+            <p>Galpões logísticos e centros de distribuição que demandam soluções de iluminação, ventilação e estruturas eficientes.</p>
+          </div>
+          <div class="seg-card">
+            <h3>Varejo e atacarejo</h3>
+            <p>Supermercados, atacarejos e operações de varejo alimentar com foco em eficiência energética e ambiente adequado.</p>
+          </div>
+          <div class="seg-card">
+            <h3>Edificações comerciais</h3>
+            <p>Condomínios empresariais, edificações mistas e instalações comerciais que buscam soluções técnicas de qualidade.</p>
+          </div>
+          <div class="seg-card">
+            <h3>Setor público e concessionárias</h3>
+            <p>Órgãos públicos, utilities e concessionárias com requisitos técnicos rigorosos e processos de compra estruturados.</p>
           </div>
         </div>
       </div>
@@ -196,7 +471,7 @@
     <section class="section section-cta" id="contato">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Vamos falar sobre as necessidades da sua operação?</h2>
+          <h2>Vamos falar sobre as necessidades da sua planta?</h2>
           <p class="section-lead">
             Conte rapidamente o que você precisa e vamos indicar a melhor solução
             entre os fabricantes que representamos.
@@ -204,7 +479,7 @@
         </div>
         <div class="cta-contacts cta-contacts--single">
           <a href="https://wa.me/5541999214921?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20conversar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
-             class="btn btn-cta-primary"
+             class="btn-cta-primary"
              target="_blank"
              rel="noopener">
             Entre em contato
@@ -223,8 +498,7 @@
              class="footer-logo" />
         <p class="footer-text">
           Representações técnicas em soluções industriais. Estruturas, PRFV,
-          medição, iluminação, ventilação natural, polipropileno e
-          engenharia & inspeção.
+          iluminação, ventilação natural, polipropileno e engenharia & inspeção.
         </p>
       </div>
       <div>
@@ -240,7 +514,29 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Script para o menu mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const mainNav = document.querySelector('.main-nav');
+
+      navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+      });
+
+      // Fechar menu ao clicar em um link
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('nav-open');
+        });
+      });
+
+      // Atualizar ano no footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Inicializar Feather Icons
+      feather.replace();
+    });
+  </script>
 </body>
 </html>
-
