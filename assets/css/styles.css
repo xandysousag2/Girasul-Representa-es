@@ -788,6 +788,7 @@ p {
   padding: 60px 0 36px;
 }
 
+/* textos mais claros no fundo escuro */
 .footer-grid {
   display: flex;
   flex-wrap: wrap;
@@ -805,20 +806,35 @@ p {
 
 .footer-text {
   font-size: 0.9rem;
-  color: var(--color-text-soft);
+  color: #e5e7eb; /* Texto mais claro para bom contraste */
   max-width: 320px;
   line-height: 1.75;
 }
 
-.footer-text a { color: var(--color-primary-soft); transition: var(--transition-default); }
-.footer-text a:hover { color: var(--color-primary); }
+/* links no footer */
+.footer-text a {
+  color: #bfdbfe; /* Azul claro */
+  text-decoration: none;
+  transition: var(--transition-default);
+}
+
+.footer-text a:hover {
+  color: var(--color-primary);
+}
 
 .footer-bottom {
-  border-top: 1px solid rgba(var(--color-text-soft), 0.2);
+  border-top: 1px solid rgba(148,163,184, 0.5);
   padding-top: 20px;
   text-align: center;
   font-size: 0.8rem;
-  color: var(--color-text-soft);
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 /* =============================================
