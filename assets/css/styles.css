@@ -375,13 +375,13 @@ p {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
-  box-shadow: 0 2px 8px rgba(17,24,39,0.03);
+  box-shadow: var(--shadow-card);
   transition: var(--transition-default);
 }
 
 .fab-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(17,24,39,0.06);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
   border-color: var(--color-primary-soft);
 }
 
@@ -389,66 +389,68 @@ p {
   max-height: 48px; /* Logos um pouco maiores */
   width: auto;
   object-fit: contain;
-  filter: grayscale(80%); /* Mais discreto */
-  opacity: 0.7;
+  filter: grayscale(100%); /* Monocromático */
+  opacity: 0.6;
   transition: var(--transition-default);
 }
 
-.fab-card:hover img {
-  filter: grayscale(0%);
+.fab-card img:hover {
+  filter: grayscale(0%); /* Colorido no hover */
   opacity: 1;
 }
 
 /* =============================================
-   ABOUT (bloco Sobre a Girasul — home)
+   SOBRE A GIRASUL
    ============================================= */
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr); /* Assimetria sutil */
-  gap: 56px; /* Ajustado para menos espaçamento */
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.15fr); /* Ajuste para imagem maior */
+  gap: 56px;
   align-items: flex-start; /* Alinha o conteúdo ao topo */
-  background-color: var(--color-bg-surface); /* Fundo branco */
-  padding: 80px 0; /* Padding interno */
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-  margin: 0 auto; /* Centraliza o card */
-  max-width: 1200px; /* Limita largura */
+}
+
+.about-visual {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .about-visual img {
   width: 100%;
-  max-height: 480px; /* Maior */
+  max-height: 520px; /* Altura máxima para a imagem */
   object-fit: cover;
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
 
 .about-text {
-  max-width: 560px; /* Limita a largura do texto para compactar */
+  max-width: 600px; /* Limita a largura do texto para melhor legibilidade */
 }
 
-.about-text .badge { margin-bottom: 14px; }
+.about-text h2 {
+  margin-bottom: 12px; /* Reduz espaçamento */
+}
 
-.about-text h2 { margin-bottom: 12px; } /* Menos espaçamento */
-.about-text p { margin-bottom: 10px; } /* Menos espaçamento */
+.about-text p {
+  margin-bottom: 10px; /* Reduz espaçamento */
+}
 
 .about-bullets {
-  margin-top: 20px; /* Menos espaçamento */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px 24px; /* Ajustado */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px 24px; /* Ajusta espaçamento entre bullets */
+  margin-top: 20px; /* Aproxima bullets do texto */
 }
 
 .about-bullet-item {
   display: flex;
-  align-items: flex-start;
   gap: 14px;
 }
 
-.about-bullet-icon { /* Novo elemento para ícone */
-  width: 24px;
-  height: 24px;
+.about-bullet-icon {
+  width: 40px;
+  height: 40px;
   background-color: var(--color-primary-soft);
   border-radius: 50%;
   display: flex;
@@ -459,8 +461,8 @@ p {
 }
 
 .about-bullet-icon svg {
-  width: 14px;
-  height: 14px;
+  width: 18px; /* Ícones um pouco maiores */
+  height: 18px;
   color: var(--color-primary);
 }
 
@@ -492,34 +494,19 @@ p {
   margin-bottom: 60px;
 }
 
-.flow-layout {
+.how-we-work-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Cards à esquerda, imagem à direita */
-  gap: 60px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr); /* Ajuste para imagem maior */
+  gap: 40px;
   align-items: center;
 }
 
-.flow-cards {
+.steps-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2x2 grid para os cards */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2x2 cards */
   gap: 30px;
   position: relative;
-  padding: 20px 0; /* Espaço para as linhas */
-}
-
-.flow-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flow-image img {
-  width: 100%;
-  max-width: 400px; /* Limita o tamanho da imagem */
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card-hover);
+  padding: 0; /* Remove padding vertical */
 }
 
 .step-item {
@@ -574,43 +561,19 @@ p {
   line-height: 1.6;
 }
 
-/* Linhas de conexão entre os steps (desktop) */
-.flow-cards::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: var(--color-accent-flow);
-  z-index: 0;
-  transform: translateY(-50%);
-  display: none; /* Esconde em mobile, mostra em desktop */
+.how-we-work-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flow-cards::after { /* Linha vertical para conectar 1a e 2a linha de cards */
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background-color: var(--color-accent-flow);
-  z-index: 0;
-  transform: translateX(-50%);
-  display: none; /* Esconde em mobile, mostra em desktop */
+.how-we-work-visual img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  object-fit: cover;
+  max-height: 500px; /* Limita a altura da imagem */
 }
-
-@media (min-width: 769px) {
-  .flow-cards::before,
-  .flow-cards::after {
-    display: block;
-  }
-  .step-item {
-    z-index: 1; /* Garante que o card fique acima da linha */
-  }
-}
-
 
 /* =============================================
    CARDS DETALHADOS DAS SOLUÇÕES - Módulos de Planta
@@ -750,7 +713,7 @@ p {
 
 .seg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Força 3 colunas em desktop */
   gap: 24px;
 }
 
@@ -893,15 +856,17 @@ p {
     height: 200px;
     border-radius: var(--radius-card) var(--radius-card) 0 0;
   }
-  .flow-layout { /* Em tablets, a imagem do fluxo vai para baixo */
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .how-we-work-layout {
+    grid-template-columns: 1fr; /* Em mobile, a imagem fica abaixo dos cards */
   }
-  .flow-image {
-    order: 1; /* Coloca a imagem depois dos cards */
+  .how-we-work-visual {
+    margin-top: 40px; /* Espaçamento entre cards e imagem em mobile */
   }
-  .flow-cards {
-    order: 2;
+}
+
+@media (max-width: 900px) { /* Breakpoint para 2 colunas nos segmentos */
+  .seg-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -942,12 +907,11 @@ p {
   .about-grid { gap: 40px; }
   .about-bullets { grid-template-columns: 1fr; gap: 24px; }
 
-  .flow-cards { grid-template-columns: 1fr; gap: 30px; }
-  .flow-cards::before, .flow-cards::after { display: none; } /* Linhas somem em mobile */
+  .steps-grid { grid-template-columns: 1fr; gap: 30px; } /* 1 coluna em mobile */
 
   .cards-grid { grid-template-columns: 1fr; }
 
-  .seg-grid { grid-template-columns: 1fr; }
+  .seg-grid { grid-template-columns: 1fr; } /* 1 coluna em mobile */
 
   .footer-grid { flex-direction: column; gap: 30px; }
 }
