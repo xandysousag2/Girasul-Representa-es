@@ -145,7 +145,7 @@ p {
 }
 
 .brand-logo {
-  height: 40px; /* Logo um pouco maior */
+  height: 48px; /* Logo um pouco maior */
   width: auto;
 }
 
@@ -246,25 +246,28 @@ p {
 .btn-nav {
   background-color: var(--color-primary);
   color: var(--color-bg-surface) !important;
-  padding: 12px 24px;
+  padding: 10px 22px;
   border-radius: var(--radius-button);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .btn-nav:hover {
   background-color: var(--color-primary-hover);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 /* =============================================
-   HERO - Linha de Produção
+   HERO
    ============================================= */
 
 .hero {
   position: relative;
-  padding: 120px 0 100px; /* Mais espaçamento */
-  background-color: var(--color-text-main); /* Fundo escuro */
+  padding: 120px 0; /* Mais padding para o hero */
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px; /* Altura mínima para garantir visibilidade */
 }
 
 .hero-background-image {
@@ -274,7 +277,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: -2;
 }
 
 .hero-overlay {
@@ -283,13 +286,13 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(17,24,39,0.9) 0%, rgba(17,24,39,0.7) 50%, rgba(17,24,39,0.2) 100%);
-  z-index: 2;
+  background: linear-gradient(90deg, rgba(17,24,39,0.9) 0%, rgba(17,24,39,0.6) 50%, rgba(17,24,39,0.1) 100%);
+  z-index: -1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); /* Assimetria */
   gap: 60px;
@@ -319,8 +322,8 @@ p {
 }
 
 .hero-metrics {
-  background-color: rgba(var(--color-text-main), 0.7); /* Fundo semi-transparente */
-  border: 1px solid rgba(var(--color-accent-flow), 0.3);
+  background-color: rgba(17,24,39, 0.7); /* Fundo semi-transparente */
+  border: 1px solid rgba(14,165,233, 0.3); /* Usando var(--color-accent-flow) */
   border-left: 4px solid var(--color-accent-flow); /* Destaque lateral */
   border-radius: var(--radius-card);
   padding: 24px;
@@ -402,9 +405,9 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); /* Assimetria sutil */
-  gap: 80px; /* Mais espaçamento */
-  align-items: center;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr); /* Assimetria sutil */
+  gap: 56px; /* Ajustado para menos espaçamento */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
   background-color: var(--color-bg-surface); /* Fundo branco */
   padding: 80px 0; /* Padding interno */
   border-radius: var(--radius-card);
@@ -421,16 +424,20 @@ p {
   box-shadow: var(--shadow-card);
 }
 
+.about-text {
+  max-width: 560px; /* Limita a largura do texto para compactar */
+}
+
 .about-text .badge { margin-bottom: 14px; }
 
-.about-text h2 { margin-bottom: 20px; }
-.about-text p { margin-bottom: 16px; }
+.about-text h2 { margin-bottom: 12px; } /* Menos espaçamento */
+.about-text p { margin-bottom: 10px; } /* Menos espaçamento */
 
 .about-bullets {
-  margin-top: 36px;
+  margin-top: 20px; /* Menos espaçamento */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 28px;
+  gap: 24px 24px; /* Ajustado */
 }
 
 .about-bullet-item {
@@ -485,12 +492,34 @@ p {
   margin-bottom: 60px;
 }
 
-.steps-grid {
+.flow-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: 2fr 1fr; /* Cards à esquerda, imagem à direita */
+  gap: 60px;
+  align-items: center;
+}
+
+.flow-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid para os cards */
+  gap: 30px;
   position: relative;
   padding: 20px 0; /* Espaço para as linhas */
+}
+
+.flow-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow-image img {
+  width: 100%;
+  max-width: 400px; /* Limita o tamanho da imagem */
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .step-item {
@@ -546,7 +575,7 @@ p {
 }
 
 /* Linhas de conexão entre os steps (desktop) */
-.steps-grid::before {
+.flow-cards::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -559,14 +588,29 @@ p {
   display: none; /* Esconde em mobile, mostra em desktop */
 }
 
+.flow-cards::after { /* Linha vertical para conectar 1a e 2a linha de cards */
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--color-accent-flow);
+  z-index: 0;
+  transform: translateX(-50%);
+  display: none; /* Esconde em mobile, mostra em desktop */
+}
+
 @media (min-width: 769px) {
-  .steps-grid::before {
+  .flow-cards::before,
+  .flow-cards::after {
     display: block;
   }
   .step-item {
     z-index: 1; /* Garante que o card fique acima da linha */
   }
 }
+
 
 /* =============================================
    CARDS DETALHADOS DAS SOLUÇÕES - Módulos de Planta
@@ -668,13 +712,12 @@ p {
   max-height: 38px; /* Logos maiores */
   width: auto;
   object-fit: contain;
-  filter: grayscale(80%);
-  opacity: 0.7;
+  filter: none; /* Logos coloridas */
+  opacity: 0.9; /* Opacidade suave */
   transition: var(--transition-default);
 }
 
 .card-brands-logos img:hover {
-  filter: grayscale(0%);
   opacity: 1;
 }
 
@@ -850,6 +893,16 @@ p {
     height: 200px;
     border-radius: var(--radius-card) var(--radius-card) 0 0;
   }
+  .flow-layout { /* Em tablets, a imagem do fluxo vai para baixo */
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .flow-image {
+    order: 1; /* Coloca a imagem depois dos cards */
+  }
+  .flow-cards {
+    order: 2;
+  }
 }
 
 @media (max-width: 768px) {
@@ -889,8 +942,8 @@ p {
   .about-grid { gap: 40px; }
   .about-bullets { grid-template-columns: 1fr; gap: 24px; }
 
-  .steps-grid { grid-template-columns: 1fr; gap: 30px; }
-  .steps-grid::before { display: none; } /* Linha some em mobile */
+  .flow-cards { grid-template-columns: 1fr; gap: 30px; }
+  .flow-cards::before, .flow-cards::after { display: none; } /* Linhas somem em mobile */
 
   .cards-grid { grid-template-columns: 1fr; }
 
