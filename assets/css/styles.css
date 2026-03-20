@@ -672,8 +672,14 @@ p {
   transition: var(--transition-default);
 }
 
+/* Enmac um pouco maior pra compensar formato mais baixo */
 .card-brands-logos img[alt="Enmac"] {
   max-height: 42px;
+}
+
+/* Dakota um pouco menor pra caber melhor com o texto */
+.card-brands-logos img[alt="Dakota"] {
+  max-height: 34px;
 }
 
 .card-brands-logos img:hover {
