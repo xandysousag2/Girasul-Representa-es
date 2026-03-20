@@ -656,6 +656,14 @@ p {
   color: var(--color-text-soft);
 }
 
+/* Logo + link na mesma linha */
+.card-brands-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .card-brands-logos {
   display: flex;
   align-items: center;
@@ -698,6 +706,7 @@ p {
   letter-spacing: 0.01em;
   opacity: 0.85;
   transition: var(--transition-default);
+  white-space: nowrap;
 }
 
 .card-catalog-link svg {
@@ -713,20 +722,20 @@ p {
   gap: 8px;
 }
 
-/* Card Vetro — full width com layout horizontal */
-.cards-grid .card#vetro {
+/* Cards de largura total — Vetro e Estribofire */
+.cards-grid .card.card-full {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
-.cards-grid .card#vetro .card-image {
+.cards-grid .card.card-full .card-image {
   height: 100%;
   border-radius: var(--radius-card) 0 0 var(--radius-card);
 }
 
-.cards-grid .card#vetro .card-body {
+.cards-grid .card.card-full .card-body {
   padding: 30px;
 }
 
@@ -887,12 +896,12 @@ p {
     max-height: 380px;
   }
 
-  .cards-grid .card#vetro {
+  .cards-grid .card.card-full {
     grid-template-columns: 1fr;
   }
 
-  .cards-grid .card#vetro .card-image {
-    height: 200px;
+  .cards-grid .card.card-full .card-image {
+    height: 220px;
     border-radius: var(--radius-card) var(--radius-card) 0 0;
   }
 
