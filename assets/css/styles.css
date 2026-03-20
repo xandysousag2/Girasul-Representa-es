@@ -663,6 +663,13 @@ p {
   flex-wrap: wrap;
 }
 
+.card-brands-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* espaço entre logo e link */
+  flex-wrap: wrap;
+}
+
 .card-brands-logos img {
   max-height: 38px;
   width: auto;
@@ -670,6 +677,11 @@ p {
   filter: none;
   opacity: 0.9;
   transition: var(--transition-default);
+}
+
+/* pequeno ajuste específico para a Enmac */
+.card-brands-logos img[alt="Enmac"] {
+  max-height: 42px;   /* um pouco maior, compensa o desenho “mais baixo” */
 }
 
 .card-brands-logos img:hover {
@@ -680,24 +692,26 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--color-primary);
+  font-size: 0.9rem;           /* mesmo “peso visual” do resto */
+  font-weight: 500;            /* menos pesado */
+  color: var(--color-text-main);
   text-decoration: none;
-  letter-spacing: 0.02em;
-  margin-top: 4px;
+  letter-spacing: 0.01em;
+  margin-top: 2px;
+  opacity: 0.9;
   transition: var(--transition-default);
 }
 
 .card-catalog-link svg {
-  width: 14px;
-  height: 14px;
-  color: var(--color-primary);
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent-flow);
   flex-shrink: 0;
 }
 
 .card-catalog-link:hover {
-  color: var(--color-primary-hover);
+  color: var(--color-primary);
+  opacity: 1;
   gap: 8px;
 }
 
