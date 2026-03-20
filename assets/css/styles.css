@@ -680,6 +680,31 @@ p {
   transition: var(--transition-default);
 }
 
+/* Link de catálogo técnico dentro dos cards */
+.card-catalog-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+  transition: var(--transition-default);
+}
+
+.card-catalog-link svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.card-catalog-link:hover {
+  color: var(--color-primary-hover);
+  gap: 8px; /* leve deslocamento do ícone no hover */
+}
 .card-brands-logos img:hover {
   opacity: 1;
 }
