@@ -975,3 +975,11 @@ p {
   .hero-metrics { flex-direction: column; gap: 15px; }
   .metric-item { align-items: flex-start; text-align: left; }
 }
+
+/* Estilo para link de catálogo desabilitado */
+.card-catalog-link.disabled {
+  pointer-events: none; /* Impede cliques */
+  opacity: 0.6; /* Deixa o link mais "apagado" */
+  cursor: default; /* Muda o cursor para indicar que não é clicável */
+  text-decoration: none; /* Remove sublinhado, se houver */
+}
